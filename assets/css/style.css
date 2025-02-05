@@ -55,9 +55,14 @@ a {
 
 /* ============== Header ============== */
 .header-wrap {
+  display: flex;
   position: relative;
+  flex-direction: column;
   background-color: #e6f0ff;
   height: calc(100vh - 90px);
+  /* align-items: center; */
+  justify-content: center;
+
 }
 
 .fixed-header {
@@ -103,9 +108,9 @@ a {
   border-radius: 8px;
 }
 
-.hero {
+/* .hero {
   padding-top: 130px;
-}
+} */
 .hero .info {
   width: 51%;
 }
