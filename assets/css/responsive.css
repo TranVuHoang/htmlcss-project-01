@@ -148,12 +148,22 @@
   .stats .info {
     padding: 0;
   }
+
+  .subscription .image {
+    display: none;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .show-on-mobile {
     display: none;
+  }
+
+  .footer .row-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
   }
 }
 
@@ -219,5 +229,26 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
+  }
+
+  .subscription .info {
+    padding: 32px;
+  }
+
+  .footer .row-top {
+    /* width: 100%; */
+    margin-left: 10px;
+    padding: 0 35px;
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px 64px;
+    justify-content: space-between;
+  }
+
+  .footer .row-bottom {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
   }
 }
