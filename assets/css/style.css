@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
   --primari-color: #0f1b4c;
 }
@@ -476,7 +477,7 @@ a {
   color: #1c1c1d;
 }
 .footer .list,
-.desc {
+.footer .desc {
   margin-top: 40px;
 }
 .footer .item {
