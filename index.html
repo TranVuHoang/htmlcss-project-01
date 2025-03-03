@@ -111,12 +111,16 @@
           </a>
 
           <!-- navigation -->
-          <ul>
+          <ul id="pc-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="show-on-mobile separate">
+              <a href="#sign-in">Sign in</a>
+            </li>
+            <li class="show-on-mobile"><a href="#sign-up">Sign up</a></li>
           </ul>
 
           <!-- action -->
@@ -168,16 +172,8 @@
           </label>
         </div>
 
-        <!-- navigation -->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="hide-on-tablet separate"><a href="#sign-in">Sign in</a></li>
-          <li class="hide-on-tablet"><a href="#sign-up">Sign up</a></li>
-        </ul>
+        <!-- navigation mobile-->
+        <ul id="mobile-nav"></ul>
       </div>
     </header>
     <!-- Tablet/Mobile header end-->
@@ -552,5 +548,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
