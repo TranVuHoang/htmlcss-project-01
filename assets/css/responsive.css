@@ -140,7 +140,13 @@
 
   .features .list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Chia 2 cột linh hoạt */
+    gap: 20px;
+    width: 100%; /* Đảm bảo không rộng hơn .content */
+  }
+
+  .stats .info {
+    padding: 0;
   }
 }
 
@@ -184,5 +190,34 @@
   .features .list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stats .row {
+    flex-direction: column;
+  }
+
+  .stats .img-block {
+    width: 100%;
+  }
+
+  .stats .img-block img {
+    width: 100%;
+    object-position: left;
+    padding: 20px;
+  }
+
+  .stats .info {
+    width: 100%;
+  }
+
+  .stats .sub-title,
+  .stats .info .desc {
+    width: 100%;
+  }
+
+  .stats .row-qty {
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
   }
 }
