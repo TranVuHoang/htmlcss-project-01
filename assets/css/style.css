@@ -54,7 +54,7 @@ a {
 }
 
 /* ============== Header ============== */
-.header-wrap {
+.hero {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -185,7 +185,6 @@ a {
 }
 /* ============== Guides ============== */
 .guides {
-  /* background-color: red; */
   padding: 93px 0 79px;
   margin-top: 40px;
 }
@@ -343,7 +342,6 @@ a {
 /* ============== Stats =============== */
 .stats {
   margin-top: 75px;
-  /* background-color: orange; */
   padding: 50px 0;
 }
 .stats .row {
@@ -413,7 +411,6 @@ a {
 /* ============= Subscription ============== */
 .subscription {
   margin-top: 51px;
-  /* background-color: green; */
   padding-top: 40px;
 }
 .subscription .body {

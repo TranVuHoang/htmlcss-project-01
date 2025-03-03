@@ -85,17 +85,30 @@
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
-    <!-- Styles  -->
+    <!-- Styles css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
   </head>
   <body>
-    <!-- Header fixed -->
+    <!-- PC Header fixed -->
     <header class="fixed-header">
       <div class="content">
         <nav class="nav-bar">
+          <!-- Tablet/mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
           <!-- logo -->
-          <a href="/"><img src="./assets/img/Logo.svg" alt="Besnik." /></a>
+          <a href="/">
+            <img src="./assets/img/Logo.svg" alt="Besnik." class="logo" />
+          </a>
 
           <!-- navigation -->
           <ul>
@@ -115,14 +128,67 @@
       </div>
     </header>
 
-    <!-- Header -->
-    <header class="header-wrap">
-      <div class="content">
-        <!-- hero -->
-        <div class="hero">
+    <!-- Tablet/Mobile header start-->
+    <header class="header__mobile">
+      <input
+        type="checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        name=""
+        hidden
+      />
+
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="header__menu-overlay"></label>
+
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <div class="menu-wrap">
+          <!-- logo -->
+          <a href="/">
+            <img src="./assets/img/Logo.svg" alt="Besnik." class="logo" />
+          </a>
+          <!-- Tablet/mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu-mobile">
+            <svg
+              class="toggle-menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </label>
+        </div>
+
+        <!-- navigation -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="hide-on-tablet separate"><a href="#sign-in">Sign in</a></li>
+          <li class="hide-on-tablet"><a href="#sign-up">Sign up</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Tablet/Mobile header end-->
+
+    <main hidden>
+      <!-- hero section-->
+      <section class="hero">
+        <div class="content">
           <div class="info">
             <p class="sub-title">Welcome to Besnik Agency</p>
-            <h1 class="title">Discover a place you'll love to live.</h1>
+            <h1 class="title">Discover a place you'll love to live123.</h1>
             <p class="desc">
               Get the best real estate deals first, before they hit the mass
               market! HOT FORECLOSURE DEALS with one simple search.
@@ -135,10 +201,7 @@
             class="hero-img"
           />
         </div>
-      </div>
-    </header>
-
-    <main>
+      </section>
       <!-- Clients -->
       <div class="clients">
         <div class="content">
@@ -404,7 +467,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none">
       <div class="content">
         <div class="row row-top">
           <!-- Product column -->
