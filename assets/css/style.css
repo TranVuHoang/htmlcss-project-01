@@ -4,7 +4,8 @@
 :root {
   --primari-color: #0f1b4c;
 }
-html, body {
+html,
+body {
   font-size: 62.5%;
   scroll-behavior: smooth; /* cuộn trang sẽ mượt mà*/
 }
@@ -47,10 +48,15 @@ a {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /* ============== Header ============== */
@@ -62,7 +68,6 @@ a {
   height: calc(100vh - 90px);
   /* align-items: center; */
   justify-content: center;
-
 }
 
 .fixed-header {
@@ -163,7 +168,6 @@ a {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.25;
-  text-align: right;
 }
 .clients .row-desc {
   margin-top: 23px;

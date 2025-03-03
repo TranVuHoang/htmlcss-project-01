@@ -9,6 +9,14 @@
   }
 }
 
+@media (max-width: 1199.98px) {
+  /* Responsive client */
+  .clients .img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /* Tablet & Mobile */
 @media screen and (max-width: 991.98px) {
   .nav-bar {
@@ -120,13 +128,17 @@
   }
 
   .hero .info .desc {
+    width: 80%;
     text-align: center;
+    font-size: 1.3rem;
   }
 
   .hero-img {
     position: static;
     width: 50%;
   }
+
+  /* Responsive client */
 }
 
 /* Tablet */
