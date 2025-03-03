@@ -167,4 +167,9 @@
   .toggle-menu-mobile {
     display: block;
   }
+
+  .list-guides {
+    flex-direction: column;
+    row-gap: 60px;
+  }
 }

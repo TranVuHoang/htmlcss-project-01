@@ -227,9 +227,9 @@ a {
 .list-guides {
   display: flex;
   justify-content: space-between;
-  width: 685px;
   margin: 70px auto 0;
 }
+
 .guides-item {
   text-align: center;
 }
