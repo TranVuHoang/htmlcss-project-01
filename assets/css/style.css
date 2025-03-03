@@ -146,6 +146,7 @@ a {
   position: absolute;
   bottom: 0;
   right: calc((100vw - 1110px) / 2 - 100px);
+  text-align: center;
 }
 
 /* ============== Clients ============== */
@@ -482,7 +483,6 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   color: #7a7a7e;
-  white-space: nowrap;
 }
 
 .footer .desc {
